@@ -56,7 +56,25 @@ body {
 
   height: 106px;
 
-  /* background-color: lightgray; */
+  animation: memoji 1000ms;
+}
+
+@keyframes memoji {
+  0% {
+    transform: 
+    translateY(250px) 
+    scale(2.5, 2.5);
+  }
+  71% {
+    transform: 
+    translateY(250px) 
+    scale(2.5, 2.5);
+  }
+  100% {
+    transform: 
+    translateY(0) 
+    scale(1, 1);
+  }
 }
 
 #circlePink {
@@ -77,6 +95,8 @@ body {
 
 #mimojiImg {
   position: absolute;
+  height: 123px;
+  transform: translateY(-15px);
 }
 
 #info {
@@ -86,6 +106,14 @@ body {
   font-size: 32px;
   line-height: 40px;
   color: var(--pink);
+
+  animation: info 1000ms;
+}
+
+@keyframes info {
+  0% {transform: translateY(320px);}
+  71% {transform: translateY(320px);}
+  100% {transform: translateY(0);}
 }
 
 #social {
@@ -98,6 +126,24 @@ body {
 
   margin-top: 18px;
 
+  animation: icons 1000ms;
+}
+
+@keyframes icons {
+
+  0% {
+    opacity: 0;
+    transform: translateY(700px);
+  }
+  71% {
+    opacity: 0;
+    transform: translateY(700px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 }
 
 .icon {
