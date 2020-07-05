@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+*, button , input {
+  border: 0;
+  outline: 0;
+}
+
+body {
+  background-image: url('../assets/images/bg.png');
+}
+
+:root {
+  --pink: #D984AC;
+  --lightpink: #D984AC9C;
+
+  --green: #0ABF04;
+  --lightgreen: #0ABF0499;
+
+  --white: #FFF;
+}
+
+@font-face {
+  font-family: NoirPro_Bold;
+  src: url('../assets/fonts/NoirPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: ITCAvantGrade_Bold;
+  src: url('../assets/fonts/ITCAvantGardeStd-Bold.otf');
+}
+
+/* PAGINA */
+
+#flex {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+#mimoji {
+  display: flex;
+
+  align-content: center;
+  justify-content: center;
+
+  margin-top: 30px;
+
+  height: 106px;
+
+  /* background-color: lightgray; */
+}
+
+#circlePink {
+  position: absolute;
+
+  width: 94px;
+  height: 94px;
+
+  background-color: var(--pink);
+
+  border-radius: 90%;
+  border: 4px solid var(--green);
+
+  box-shadow: 0px 0px 15px var(--lightgreen);
+
+  transform: translateY(7px);
+}
+
+#mimojiImg {
+  position: absolute;
+}
+
+#info {
+  margin-top: 20px;
+  font-family: ITCAvantGrade_Bold;
+  text-align: center;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--pink);
+}
+
+#social {
+  display: flex;
+
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+  margin-top: 18px;
+
+}
+
+.icon {
+  width: 96px;
+  height: 96px;
+
+  margin: 18px;
+
+  display: flex;
+
+  justify-content: center;
+  align-content: center;
+  
+  border-radius: 24px;
+
+  background-color: var(--pink);
+  
+  box-shadow: 0px 3px 30px var(--lightpink);
+
+}
