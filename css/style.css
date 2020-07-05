@@ -6,6 +6,8 @@
 
 html, body, #root {
   height: 100%;
+
+  overflow: hidden;
 }
 
 *, button , input {
@@ -15,7 +17,6 @@ html, body, #root {
 
 body {
   background-image: url('../assets/images/bg.png');
-  overflow: hidden;
 }
 
 :root {
@@ -46,7 +47,6 @@ body {
 
   align-items: center;
 
-  overflow: hidden;
 
 }
 
