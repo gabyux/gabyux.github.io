@@ -167,7 +167,7 @@ body {
   
   box-shadow: 0px 3px 30px var(--lightpink);
 
-  transition: all 200ms;
+  transition: transform 200ms, box-shadow 200ms ;
 }
 
 .icon:hover {
